@@ -26,6 +26,7 @@
 
 
 $string['pluginname'] = 'Cloze Editor';
+$string['privacy:metadata'] = 'The TinyMCE Cloze editor plugin does not store any personal data.';
 
 $string['clozeeditor:desc'] = 'This is an editor for CLOZE questions';
 $string['clozeeditor:chooseclozeformat'] = 'Please choose a Cloze sub-question format:';
