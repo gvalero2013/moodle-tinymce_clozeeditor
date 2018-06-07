@@ -13,8 +13,9 @@ function getThrottle(string, count) {
 
             if (typeof(temp) == 'string') {
                 return temp;
-            } else
+            } else {
                 return '';
+            }
         } else {
             temp = deleteInbetweenThrottles(temp);
         }
