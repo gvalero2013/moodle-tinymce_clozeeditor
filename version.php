@@ -26,8 +26,8 @@
 defined('MOODLE_INTERNAL') || die();
 
 
-$plugin->version = 2014030600;
-$plugin->requires = 2012112900;
+$plugin->version = 20180607; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->requires = 2017111300; // 2017111300 is Moodle 3.4.0
 $plugin->component = 'tinymce_clozeeditor';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0';
+$plugin->release = '1.0'; // Maybe this should be 1.1
