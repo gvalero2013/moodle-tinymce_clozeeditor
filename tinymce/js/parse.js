@@ -158,7 +158,7 @@ function addRow(id) {
     input_answer.id = counter + "_option";
     input_answer.name = counter + "_option";
     input_answer.size = 30;
-    input_answer.setAttribute("onkeypress", "if (event.keyCode==13) { encode() }" );           
+    input_answer.setAttribute("onkeypress", "if (event.keyCode==13) { encode() }" );
 
     // third col: Throttle Value
     td3.className = "table_value_throttle";
@@ -329,10 +329,10 @@ var clozeeditorDialog = {
          // tinyMCEPopup.editor.execCommand('mceInsertContent', false, getEncodeElement().value+" ");
         tinyMCEPopup.editor.execCommand('mceInsertContent', false, encode() + " ");
 
-		tinyMCEPopup.close();
-        }
+        tinyMCEPopup.close();
+    }
    };
 
 if (typeof(tinyMCEPopup) != "undefined") {
         tinyMCEPopup.onInit.add(clozeeditorDialog.init, clozeeditorDialog);
-  }
+}
