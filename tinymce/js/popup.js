@@ -67,8 +67,9 @@ function __dlg_translate(i18n) {
         }
     }
     var txt = i18n[document.title];
-    if (txt)
+    if (txt) {
         document.title = txt;
+    }
 };
 
 // closes the dialog and passes the return info upper.
