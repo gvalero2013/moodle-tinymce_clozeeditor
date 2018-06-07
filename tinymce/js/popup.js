@@ -7,7 +7,7 @@
 // For full source code and docs, visit http://www.interactivetools.com/
 //
 // Version 3.0 developed by Mihai Bazon.
-//   http://dynarch.com/mishoo
+// http://dynarch.com/mishoo
 //
 // $Id: popup.js,v 1.1 2006/03/04 15:24:17 julmis Exp $
 
