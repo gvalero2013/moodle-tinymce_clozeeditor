@@ -18,13 +18,13 @@ function percentOutput(string) {
             temp = deleteAfterString(temp, '%');
 
             if (typeof(temp) != 'undefined') {
-                 return temp; 
+                 return temp;
             }
         } else if (temp.charAt(0) == '=') {
             // flat 100
-            return '100'; 
+            return '100';
         } else {
-           // Percentage not given, so it's zero
+            // Percentage not given, so it's zero
             return '0';
         }
     }
