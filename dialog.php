@@ -1,3 +1,4 @@
+<?php 
 // This file is part of
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -11,7 +12,7 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 // GNU General Public License for more details.
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
-<?php // $Id: insert_cloze.php,v 1.4 2013/18/03
+// $Id: insert_cloze.php,v 1.4 2013/18/03
 
 define('NO_MOODLE_COOKIES', true); // Session not used here.
 
@@ -88,10 +89,10 @@ header('X-UA-Compatible: IE=edge');
 
 <form onsubmit="clozeeditorDialog.insert();return false;" action="#">
 
-	<div class="mceActionPanel">
-		<input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
-		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-	</div>
+        <div class="mceActionPanel">
+                <input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
+                <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
 </form>
 
 </body>
