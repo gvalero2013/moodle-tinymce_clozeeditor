@@ -105,7 +105,7 @@ function countAnswers() {
     if (typeof(tinyMCEPopup) != 'undefined') {
         var cache = tinyMCEPopup.editor.selection.getContent({format : 'text'});
         return (cache.split("#").length - 1);
-    } else {                                                                                                                 
+    } else {                                          
         return (longstring.split("#").length - 1);
     }
 }
