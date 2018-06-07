@@ -44,7 +44,7 @@
                         ed.onNodeChange.add(function(ed, cm, n) {
                                 cm.setActive('clozeeditor', n.nodeName == 'IMG');
                         });
-                    },
+            },
 
                 /**
                  * Creates control instances based in the incomming name. This method is normally not
