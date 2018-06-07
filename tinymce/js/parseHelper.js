@@ -13,7 +13,7 @@ function isStringInString(string1, searchS) {
     } else {
         return true;
     }
-  }
+}
 
 function deleteLastChar(string) {
     return string.slice(0, -1);
