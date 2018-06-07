@@ -13,7 +13,7 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle. If not, see <http://www.gnu.org/licenses/>.
-
+//
 // $Id: insert_cloze.php,v 1.4 2013/18/03
 
 define('NO_MOODLE_COOKIES', true); // Session not used here.
