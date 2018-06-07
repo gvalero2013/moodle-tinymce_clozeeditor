@@ -3,7 +3,7 @@
 // Parse Answer
 
 // this function will retrieve an answer
-  function getAnswer(string, count) {
+function getAnswer(string, count) {
     var temp = getAnswerCode(string);
 
     // delete the first percentage
@@ -16,12 +16,12 @@
 
             if (isStringInString(temp, ':')) {
                 // indicates throttle values
-        temp = deleteAfterString(temp, ':');
+               temp = deleteAfterString(temp, ':');
             }
             if (typeof(temp) == 'string') {
                 return temp;
             } else
-        return '';
+            return '';
         } else {
             temp = deleteInbetweenAnswers(temp);
         }
@@ -39,13 +39,13 @@ function deleteInbetweenAnswers(string) {
     if (temp.length > 0) {
         if (temp.charAt(1) == '%') {
             temp = deleteTillChar(temp, '%');
-            }
-    temp = substr(temp, 1);
+        }
+        temp = substr(temp, 1);
 
         if ((temp.charAt(1) == '%') || (temp.charAt(2) == '%') || (temp.charAt(3) == '%')) {
             // when should this be the case? :-/
-      temp = deleteTillChar(temp, '%');
-        }   
+           temp = deleteTillChar(temp, '%');
+        }
     }
 
     return temp;
