@@ -5,12 +5,12 @@
 // @objectID represents the line number
 
 function getQuizTypeElement() {
-  return document.getElementsByName('quizType')[0];
+    return document.getElementsByName('quizType')[0];
 }
 
 function getAnswerElement(objectID) {
     return document.getElementsByName(objectID + '_option')[0];
-}	
+}
 
 function getThrottleElement(objectID) {
     return document.getElementsByName(objectID + '_throttle')[0];
@@ -38,14 +38,14 @@ function getGradeElement() {
 
 // had to write this one because it was in PHP but not in JS
 function substr(string, position) {
-  if (string.length > 0) {
+    if (string.length > 0) {
         return string.substring(position, string.length);
     }
 }
 
 // had to write this one because it was in PHP but not in JS
 function strpos(string, word) {
-  return string.indexOf(word);
+    return string.indexOf(word);
 }
 
 function isCode(str) {
@@ -56,7 +56,7 @@ function isCode(str) {
             // this fork looks at the first, second, first before last and last sign. If one of the first two is a
             // { and one of the last two is a }, it will be recognized as code
             return true;
-            } else {
+                } else {
             // user selected text and not code
             return false;
         }
@@ -88,12 +88,12 @@ function strstr (haystack, needle, bool) {
 
     haystack += '';
     pos = haystack.indexOf(needle);
-	
+
     if (pos == -1) {
         return false;
     } else {
         if (bool) {
-            return haystack.substr(0, pos); 
+            return haystack.substr(0, pos);
         } else {
             return haystack.slice(pos);
         }
@@ -105,9 +105,9 @@ function countAnswers() {
     if (typeof(tinyMCEPopup) != 'undefined') {
         var cache = tinyMCEPopup.editor.selection.getContent({format : 'text'});
         return (cache.split("#").length - 1);
-    } else {                                                                                                                              
+    } else {                                                                                                                    
         return (longstring.split("#").length - 1);
-    } 
+    }
 }
 
 // Count the filled inputs to see whether there are vacuous(?) elements
@@ -122,7 +122,7 @@ function countFilledInputs() {
             empty = false;
             aCounter = aCounter - 1;
         } else {;
-           return aCounter;
+            return aCounter;
         }
     }
     return aCounter;
@@ -155,7 +155,7 @@ function __dlg_init(bottom) {
     body_height = pos.y + bottom.offsetHeight;
   }
   window.dialogArguments = opener.Dialog._arguments;
-  
+
   document.body.onkeypress = __dlg_close_on_esc;
   window.focus();
 };
