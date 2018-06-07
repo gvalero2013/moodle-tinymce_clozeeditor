@@ -13,7 +13,7 @@ function loadContent() {
         splitstring = longstring;
     }
 
-    // check if user highlighted code or plain text   
+    // check if user highlighted code or plain text
     if (isCode(splitstring)) {
         // user highlighted quiz code
         for (var i = 1; i <= countAnswers(); i++) {
@@ -32,7 +32,7 @@ function loadContent() {
         addRow('main_table');
 
         // fill only the first box, because the user selected text
-    fillFirstBoxOnly(splitstring);
+        fillFirstBoxOnly(splitstring);
     }
 
     // Toogle throttle column accordingly
@@ -150,17 +150,15 @@ function addRow(id) {
     td1.appendChild(label1);
     label1.appendChild(document.createTextNode(counter));
 
-
     // second col: Answer
-    td2.className = "table_value"; 
+    td2.className = "table_value";
     var input_answer = document.createElement("INPUT");
     td2.appendChild(input_answer);
     input_answer.type = "text";
     input_answer.id = counter + "_option";
     input_answer.name = counter + "_option";
     input_answer.size = 30;
-    input_answer.setAttribute("onkeypress", "if (event.keyCode==13) { encode() }" );
-                           
+    input_answer.setAttribute("onkeypress", "if (event.keyCode==13) { encode() }" );           
 
     // third col: Throttle Value
     td3.className = "table_value_throttle";
@@ -192,9 +190,8 @@ function addRow(id) {
     input_percent.value = "0";
     input_percent.size = 4;
     input_percent.maxLength = 4;
-    input_percent.setAttribute("onChange", "correctnessClick(" + counter+"); setPercentTo100(" + counter+")");
+    input_percent.setAttribute("onChange", "correctnessClick(" + counter + "); setPercentTo100(" + counter + ")");
     td5.appendChild(input_percent);
-
 
     // sixth col: Feedback
     td6.className = "table_value";
@@ -226,7 +223,6 @@ function correctnessClick (objectID) {
     }
 }
 
-
 // this function sets the color of the percentage input field to grey or white, according to the correctness checkbox
 function setCorrectnessState(objectID, state) {
     var correct_element = getCorrectElement(objectID);
@@ -247,7 +243,7 @@ function setCorrectnessState(objectID, state) {
         percent_element.style.color = "black";
         if (percent_element.value == "100") {
             // if the value is 100, there should be a 0 so it does not say 100 and is at the same time not checked in the check box
-      percent_element.value = "0";
+            percent_element.value = "0";
         }
         percent_element.readOnly = false;
         correct_element.checked = false;
@@ -258,8 +254,8 @@ function setTestVariant(test) {
     // var f = document.forms[0];
 
     var index = 0;
-  
-  if (test == 'SHORTANSWER') {
+
+    if (test == 'SHORTANSWER') {
         index = 0;
     } else if (test == 'SHORTANSWER_C') {
         index = 1;
@@ -271,10 +267,10 @@ function setTestVariant(test) {
         index = 4;
     } else if (test == 'NUMERICAL') {
         index = 5;
-  }
+    }
 
     // old version
-    //  f.quiz_type.selectedIndex = index; 
+    // f.quiz_type.selectedIndex = index;
     getQuizTypeElement().selectedIndex = index;
 }
 
@@ -325,7 +321,7 @@ var clozeeditorDialog = {
 
         // stopped working, or never did, so commented it out on 2011-10-14, 1pm
         // f.somearg.value = tinyMCEPopup.getWindowArg('some_custom_arg');
-     },
+    },
 
     insert : function() {
          // Insert the contents from the input into the document
@@ -338,5 +334,5 @@ var clozeeditorDialog = {
    };
 
 if (typeof(tinyMCEPopup) != "undefined") {
-  tinyMCEPopup.onInit.add(clozeeditorDialog.init, clozeeditorDialog);
+        tinyMCEPopup.onInit.add(clozeeditorDialog.init, clozeeditorDialog);
   }
