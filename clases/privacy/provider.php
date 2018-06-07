@@ -13,13 +13,13 @@
  + //
  + // You should have received a copy of the GNU General Public License
  + // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
- + /**
-+ * Privacy Subsystem implementation for tinyMCE_cloze.
-+ *
-+ * @package    tinymce_clozeeditor
-+ * @copyright  2018 German Valero <gvalero@unam.mx>
-+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
-+ */
+ + // *
+ + // Privacy Subsystem implementation for tinyMCE_cloze.
+ + // 
+ + // @package    tinymce_clozeeditor
+ + // @copyright  2018 German Valero <gvalero@unam.mx>
+ + // @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ + // 
 + namespace tinymce_clozeeditor\privacy;
 + defined('MOODLE_INTERNAL') || die();
 + class provider implements
