@@ -14,8 +14,8 @@
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
-// $Id: insert_cloze.php,v 1.4 2013/18/03 + // This file is part of Moodle - http://moodle.org/
- 
+// $Id: insert_cloze.php,v 1.4 2013/18/03
+
 define('NO_MOODLE_COOKIES', true); // Session not used here.
 
 require(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__)))))) . '/config.php');
@@ -35,8 +35,8 @@ header('X-UA-Compatible: IE=edge');
 <html <?php echo $htmllang ?>
 <head>
     <title><?php print_string('clozeeditor:desc', 'tinymce_clozeeditor'); ?></title>
-    <script type="text/javascript" src="<?php echo $editor->get_tinymce_base_url(); ?>/tiny_mce_popup.js"></script>
-    <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/dialog1.js'); ?>"></script>
+    <script type="text / javascript" src=" < ? php echo $editor-> get_tinymce_base_url(); ? >/tiny_mce_popup.js"></script>
+    <script type="text / javascript" src=" < ?php echo $plugin->get_tinymce_file_url('js/dialog1.js'); ?>"></script>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/encode.js'); ?>"></script>
@@ -91,10 +91,10 @@ header('X-UA-Compatible: IE=edge');
 
 <form onsubmit="clozeeditorDialog.insert();return false;" action="#">
 
-	<div class="mceActionPanel">
-		<input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
-		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-	</div>
+        <div class="mceActionPanel">
+                <input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
+                <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
 </form>
 
 </body>
