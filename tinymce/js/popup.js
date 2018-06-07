@@ -60,8 +60,9 @@ function __dlg_translate(i18n) {
             var span = spans[i];
             if (span.firstChild && span.firstChild.data) {
                 var txt = i18n[span.firstChild.data];
-                if (txt)
+                if (txt) {
                     span.firstChild.data = txt;
+                }
             }
         }
     }
