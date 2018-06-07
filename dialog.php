@@ -3,7 +3,7 @@
 //
 // Moodle is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
-"// the Free Software Foundation, either version 3 of the License, or
+// the Free Software Foundation, either version 3 of the License, or
 // (at your option) any later version.
 //
 // Moodle is distributed in the hope that it will be useful,
@@ -33,8 +33,8 @@ header('X-UA-Compatible: IE=edge');
 <html <?php echo $htmllang ?>
 <head>
     <title><?php print_string('clozeeditor:desc', 'tinymce_clozeeditor'); ?></title>
-    <script type="text / javascript" src=" < ?php echo $editor->get_tinymce_base_url(); ? >/tiny_mce_popup.js"></script>
-    <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/dialog1.js'); ?>"></script>
+    <script type="text / javascript" src=" < ? php echo $editor-> get_tinymce_base_url(); ? >/tiny_mce_popup.js"></script>
+    <script type="text / javascript" src=" < ?php echo $plugin->get_tinymce_file_url('js/dialog1.js'); ?>"></script>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/encode.js'); ?>"></script>
