@@ -16,7 +16,7 @@ function getAnswer(string, count) {
 
             if (isStringInString(temp, ':')) {
                 // indicates throttle values
-               temp = deleteAfterString(temp, ':');
+                temp = deleteAfterString(temp, ':');
             }
             if (typeof(temp) == 'string') {
                 return temp;
@@ -44,7 +44,7 @@ function deleteInbetweenAnswers(string) {
 
         if ((temp.charAt(1) == '%') || (temp.charAt(2) == '%') || (temp.charAt(3) == '%')) {
             // when should this be the case? :-/
-           temp = deleteTillChar(temp, '%');
+            temp = deleteTillChar(temp, '%');
         }
     }
 
