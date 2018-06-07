@@ -26,7 +26,7 @@ function getComment(string, count) {
             if (typeof(temp) == 'string') {
                 return temp;
             } else {
-            return '';
+                return '';
             }
         } else {
             temp = deleteInbetweenAnswers(temp);
