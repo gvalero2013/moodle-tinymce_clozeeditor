@@ -1,6 +1,7 @@
-Installation method for Moodle 2.5 and higher versions only
+Installation method for Moodle 3.5 and higher versions only
 
-As of Moodle version 2.5, the plugin can be deployed from within Moodle, by uploading the cloze editor ZIP file
+As of Moodle version 3.5, the plugin can be deployed from within Moodle, 
+by uploading the cloze editor ZIP file 
 (see http://docs.moodle.org/25/en/Installing_add-ons#Installing_via_uploaded_ZIP_file). 
 
 Download the cloze editor ZIP-package from the Moodle plugins database
