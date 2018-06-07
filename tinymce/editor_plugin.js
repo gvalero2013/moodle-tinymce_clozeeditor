@@ -22,16 +22,16 @@
             init : function(ed, url) {
                         // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor');
                         ed.addCommand('mceclozeeditor', function() {
-                        lang = ed.getParam('language');
+                            lang = ed.getParam('language');
                                 ed.windowManager.open({
-                                file : ed.getParam("moodle_plugin_base") + 'clozeeditor/dialog.php?lang=' + lang ,
-                                width : 490 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
-                                height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
-                                inline : true
+                                    file : ed.getParam("moodle_plugin_base") + 'clozeeditor/dialog.php?lang=' + lang ,
+                                    width : 490 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
+                                    height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
+                                    inline : true
                                 }, {
                                     plugin_url : url, // Plugin absolute URL
                                 });
-                    });
+                        });
 
                         // Register clozeeditor button
                         ed.addButton('clozeeditor', {
@@ -43,8 +43,8 @@
                         // Add a node change handler, selects the button in the UI when a image is selected
                         ed.onNodeChange.add(function(ed, cm, n) {
                                 cm.setActive('clozeeditor', n.nodeName == 'IMG');
-                    });
-                },
+                        });
+                    },
 
                 /**
                  * Creates control instances based in the incomming name. This method is normally not
@@ -68,11 +68,11 @@
                  */
             getInfo : function() {
                         return {
-                        longname : 'clozeeditor plugin',
-                        author : 'Andreas Glombitza/Achim Skuta',
-                        authorurl : 'http://tinymce.moxiecode.com',
-                        infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/clozeeditor',
-                        version : "2.4"
+                            longname : 'clozeeditor plugin',
+                            author : 'Andreas Glombitza/Achim Skuta',
+                            authorurl : 'http://tinymce.moxiecode.com',
+                            infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/clozeeditor',
+                            version : "2.4"
                 };
             }
         });
