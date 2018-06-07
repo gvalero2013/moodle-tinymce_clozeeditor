@@ -1,6 +1,7 @@
 Installation method for Moodle 2.5 and higher versions only
 
-As of Moodle version 2.5, the plugin can be deployed from within Moodle, by uploading the cloze editor ZIP file (see http://docs.moodle.org/25/en/Installing_add-ons#Installing_via_uploaded_ZIP_file). 
+As of Moodle version 2.5, the plugin can be deployed from within Moodle, 
+by uploading the cloze editor ZIP file (see http://docs.moodle.org/25/en/Installing_add-ons#Installing_via_uploaded_ZIP_file). 
 
 Download the cloze editor ZIP-package from the Moodle plugins database
 In your Moodle "Site Administration" menu, go to "Plugins/Install add-ons"
@@ -17,8 +18,7 @@ At the Final window showing Success, click on the "Continue" button
 Installation method for Moodle 2.4 (and alternative method for higher versions)
 
 Unzip
-Copy the contents of the directory to the directory lib/editor/tinymce/plugins on your Moodle installation, keeping the directory structure.
+Copy the contents of the directory to the directory lib/editor/tinymce/plugins on your Moodle installation, 
+keeping the directory structure.
 Visit ' Administration > Site Administration > Notifications '
 Finish the installation process by clicking on the 'Upgrade Moodle database now' button. 
-
-
