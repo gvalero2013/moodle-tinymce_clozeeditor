@@ -19,7 +19,7 @@
  + // @package    tinymce_clozeeditor
  + // @copyright  2018 German Valero <gvalero@unam.mx>
  + // @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
- + //
+ + // .
  + namespace tinymce_clozeeditor\privacy;
 + defined('MOODLE_INTERNAL') || die();
 + class provider implements
