@@ -1,4 +1,4 @@
-<?php 
+<?php
 // This file is part of
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -33,7 +33,7 @@ header('X-UA-Compatible: IE=edge');
 <html <?php echo $htmllang ?>
 <head>
     <title><?php print_string('clozeeditor:desc', 'tinymce_clozeeditor'); ?></title>
-    <script type="text/javascript" src="<?php echo $editor->get_tinymce_base_url(); ?>/tiny_mce_popup.js"></script>
+    <script type="text / javascript" src=" < ?php echo $editor->get_tinymce_base_url(); ? >/tiny_mce_popup.js"></script>
     <script type="text/javascript" src="<?php echo $plugin->get_tinymce_file_url('js/dialog1.js'); ?>"></script>
 
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
