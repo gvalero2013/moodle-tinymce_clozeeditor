@@ -21,9 +21,9 @@ function getAnswer(string, count) {
             if (typeof(temp) == 'string') {
                 return temp;
             } else {
-            return '';
-                    }                
-            } else {
+                return '';
+            }
+        } else {
             temp = deleteInbetweenAnswers(temp);
         }
     }
