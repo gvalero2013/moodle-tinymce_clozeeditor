@@ -23,16 +23,16 @@
 namespace tinymce_clozeeditor\privacy;
 defined('MOODLE_INTERNAL') || die();
 //
-// Privacy Subsystem for tinymce_mathslate implementing null_provider.
+// Privacy Subsystem for tinymce_clozeeditor implementing null_provider.
 //
-// @copyright   2018 Daniel Thies <dethies@gmail.com>
+// @copyright   2018 German Valero <gvalero@unam.mx>
 // @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
 // .
 
 class provider implements
 
     \core_privacy\local\metadata\null_provider {
-    use \core_privacy\local\legacy_polyfill;
+    // use \core_privacy\local\legacy_polyfill;
     //
     // Get the language string identifier with the component's language
     // file to explain why this plugin stores no data.
