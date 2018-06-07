@@ -56,7 +56,7 @@ function isCode(str) {
             // this fork looks at the first, second, first before last and last sign. If one of the first two is a
             // { and one of the last two is a }, it will be recognized as code
             return true;
-                } else {
+        } else {
             // user selected text and not code
             return false;
         }
@@ -105,7 +105,7 @@ function countAnswers() {
     if (typeof(tinyMCEPopup) != 'undefined') {
         var cache = tinyMCEPopup.editor.selection.getContent({format : 'text'});
         return (cache.split("#").length - 1);
-    } else {                                                                                                                    
+    } else {                                                                                                                 
         return (longstring.split("#").length - 1);
     }
 }
