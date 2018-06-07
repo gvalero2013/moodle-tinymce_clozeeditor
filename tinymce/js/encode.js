@@ -19,7 +19,7 @@ var outputCache, throttle_value;
 function encode() {
     // create new answers object in the array for all filled inputs
     for (var i = 1; i <= countFilledInputs(); i++) {
-      answers[i] = new Object();
+        answers[i] = new Object();
         // fill array, and use getXxxElement function to address it
         answers[i]['answer']    = getAnswerElement(i).value;
         answers[i]['percent']   = getPercentElement(i).value;
@@ -60,7 +60,7 @@ function encode() {
                 getPercentElement(i).value = 100;
             }
         }
-    
+
         outputCache = outputCache +
                     '%' +
                     getPercentElement(i).value +
