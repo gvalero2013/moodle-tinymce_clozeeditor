@@ -19,31 +19,31 @@
                  * @param {tinymce.Editor} ed Editor instance that the plugin is initialized in.
                  * @param {string} url Absolute URL to where the plugin is located.
                  */
-                init : function(ed, url) {
+            init : function(ed, url) {
                         // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor');
                         ed.addCommand('mceclozeeditor', function() {
                         lang = ed.getParam('language');
                                 ed.windowManager.open({
-                                        file : ed.getParam("moodle_plugin_base") + 'clozeeditor/dialog.php?lang=' + lang ,
-                                        width : 490 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
-                                        height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
-                                        inline : true
+                                file : ed.getParam("moodle_plugin_base") + 'clozeeditor/dialog.php?lang=' + lang ,
+                                width : 490 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
+                                height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
+                                inline : true
                                 }, {
-                                        plugin_url : url, // Plugin absolute URL
+                                    plugin_url : url, // Plugin absolute URL
                                 });
-                        });
+                    });
 
                         // Register clozeeditor button
                         ed.addButton('clozeeditor', {
-                                title : 'clozeeditor.desc',
-                                cmd : 'mceclozeeditor',
-                                image : url + '/img/cloze_editor.png'
+                            title : 'clozeeditor.desc',
+                            cmd : 'mceclozeeditor',
+                            image : url + '/img/cloze_editor.png'
                         });
 
                         // Add a node change handler, selects the button in the UI when a image is selected
                         ed.onNodeChange.add(function(ed, cm, n) {
                                 cm.setActive('clozeeditor', n.nodeName == 'IMG');
-                        });
+                    });
                 },
 
                 /**
@@ -56,9 +56,9 @@
                  * @param {tinymce.ControlManager} cm Control manager to use inorder to create new control.
                  * @return {tinymce.ui.Control} New control instance or null if no control was created.
                  */
-                createControl : function(n, cm) {
-			return null;
-                },
+            createControl : function(n, cm) {
+                return null;
+            },
 
                 /**
                  * Returns information about the plugin as a name/value array.
@@ -66,15 +66,15 @@
                  *
                  * @return {Object} Name/value array containing information about the plugin.
                  */
-                getInfo : function() {
+            getInfo : function() {
                         return {
-                                longname : 'clozeeditor plugin',
-                                author : 'Andreas Glombitza/Achim Skuta',
-                                authorurl : 'http://tinymce.moxiecode.com',
-                                infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/clozeeditor',
-                                version : "2.4"
-                        };
-                }
+                        longname : 'clozeeditor plugin',
+                        author : 'Andreas Glombitza/Achim Skuta',
+                        authorurl : 'http://tinymce.moxiecode.com',
+                        infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/clozeeditor',
+                        version : "2.4"
+                };
+            }
         });
 
         // Register plugin
