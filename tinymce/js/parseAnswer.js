@@ -20,7 +20,8 @@ function getAnswer(string, count) {
             }
             if (typeof(temp) == 'string') {
                 return temp;
-            } else
+            }
+                else
             return '';
         } else {
             temp = deleteInbetweenAnswers(temp);
