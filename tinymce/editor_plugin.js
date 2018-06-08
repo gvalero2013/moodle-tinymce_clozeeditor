@@ -20,7 +20,7 @@
                  * @param {string} url Absolute URL to where the plugin is located.
                  */
             init : function(ed, url) {
-                        // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor');
+                        // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor'); .
                         ed.addCommand('mceclozeeditor', function() {
                             lang = ed.getParam('language');
                                 ed.windowManager.open({
@@ -29,18 +29,18 @@
                                     height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
                                     inline : true
                                 }, {
-                                    plugin_url : url, // Plugin absolute URL
+                                    plugin_url : url, // Plugin absolute URL.
                                 });
                         });
 
-                        // Register clozeeditor button
+                        // Register clozeeditor button.
                         ed.addButton('clozeeditor', {
                             title : 'clozeeditor.desc',
                             cmd : 'mceclozeeditor',
                             image : url + '/img/cloze_editor.png'
                         });
 
-                        // Add a node change handler, selects the button in the UI when a image is selected
+                        // Add a node change handler, selects the button in the UI when a image is selected.
                         ed.onNodeChange.add(function(ed, cm, n) {
                                 cm.setActive('clozeeditor', n.nodeName == 'IMG');
                         });
@@ -77,6 +77,6 @@
             }
         });
 
-        // Register plugin
+        // Register plugin.
         tinymce.PluginManager.add('clozeeditor', tinymce.plugins.ClozeEditorPlugin);
 })();
