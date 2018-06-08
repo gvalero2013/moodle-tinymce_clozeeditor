@@ -1,4 +1,4 @@
-Installation method for Moodle 3.5 and higher versions only
+Installation methods for Moodle 3.5 and higher versions only
 
 As of Moodle version 3.5, the plugin can be deployed from within Moodle, 
 by uploading the cloze editor ZIP file 
@@ -16,8 +16,8 @@ At the Plugins check window, click on the "Upgrade Moodle database now" button
 At the Final window showing Success, click on the "Continue" button 
 
 
-Installation method for Moodle 2.4 (and alternative method for higher versions)
-
+Alternative installation method :
+Download the cloze editor ZIP-package from the Moodle plugins database
 Unzip
 Copy the contents of the directory to the directory lib/editor/tinymce/plugins on your Moodle installation, 
 keeping the directory structure.
