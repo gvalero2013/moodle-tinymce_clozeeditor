@@ -1,8 +1,8 @@
-// script originates in dialog.php
-// copied for clarification
+// script originates in dialog.php.
+// copied for clarification.
 
-// Some functions to retrieve objects
-// @objectID represents the line number
+// Some functions to retrieve objects.
+// @objectID represents the line number.
 
 function getQuizTypeElement() {
     return document.getElementsByName('quizType')[0];
@@ -36,14 +36,14 @@ function getGradeElement() {
         return document.getElementsByName('weighting')[0];
 }
 
-// had to write this one because it was in PHP but not in JS
+// Had to write this one because it was in PHP but not in JS.
 function substr(string, position) {
     if (string.length > 0) {
         return string.substring(position, string.length);
     }
 }
 
-// had to write this one because it was in PHP but not in JS
+// Had to write this one because it was in PHP but not in JS.
 function strpos(string, word) {
     return string.indexOf(word);
 }
@@ -52,12 +52,12 @@ function isCode(str) {
     if (str != "") {
         if (((str.charAt(0) == '{') || (str.charAt(1) == '{')) &&
         ((str.charAt(str.length - 2) == '}') || (str.charAt(str.length - 1) == '}'))) {
-            // user selected code
-            // this fork looks at the first, second, first before last and last sign. If one of the first two is a
-            // { and one of the last two is a }, it will be recognized as code
+            // User selected code.
+            // This fork looks at the first, second, first before last and last sign. 
+            // If one of the first two is a { and one of the last two is a }, it will be recognized as code.
             return true;
         } else {
-            // user selected text and not code
+            // User selected text and not code.
             return false;
         }
     } else {
@@ -65,7 +65,7 @@ function isCode(str) {
     }
 }
 
-// checks if a element is correct and sets colors and checkboxes accordingly
+// Checks if a element is correct and sets colors and checkboxes accordingly.
 function checkPercentOnLeave(objectID) {
     var correct_element = getCorrectElement(objectID);
     var percent_element = getPercentElement(objectID);
@@ -81,8 +81,8 @@ function getQuizTypeFromInput() {
     return getQuizTypeElement().options[getQuizTypeElement().options.selectedIndex].value;
 }
 
-// function to extract a string; converted from PHP(?)
-// don't change
+// Function to extract a string; converted from PHP(?).
+// Don't change.
 function strstr (haystack, needle, bool) {
     var pos = 0;
 
@@ -100,7 +100,7 @@ function strstr (haystack, needle, bool) {
     }
 }
 
-// Count the answers encapsulated in a string
+// Count the answers encapsulated in a string.
 function countAnswers() {
     if (typeof(tinyMCEPopup) != 'undefined') {
         var cache = tinyMCEPopup.editor.selection.getContent({format : 'text'});
@@ -110,14 +110,14 @@ function countAnswers() {
     }
 }
 
-// Count the filled inputs to see whether there are vacuous(?) elements
-// which don't have to be walked through when encoding
+// Count the filled inputs to see whether there are vacuous(?) elements.
+// which don't have to be walked through when encoding.
 function countFilledInputs() {
     var aCounter = countInputRows();
     var empty = false;
 
     while ((empty == false) && (aCounter > 0)) {
-        answer_element = getAnswerElement(aCounter); // document.getElementsByName(aCounter+'_option')[0];
+        answer_element = getAnswerElement(aCounter); // document.getElementsByName(aCounter+'_option')[0]; .
         if ((typeof(answer_element) != 'undefined') && (answer_element.value == "")) {
             empty = false;
             aCounter = aCounter - 1;
@@ -129,17 +129,17 @@ function countFilledInputs() {
 }
 
 
-// Count the number of input rows when determining which will be the next number in line
+// Count the number of input rows when determining which will be the next number in line.
 function countInputRows() {
     var aTable = document.getElementById("main_table");
     var items = aTable.getElementsByTagName("tr");
-    // - 1 because there is a headline
+    // - 1 because there is a headline.
     return items.length - 1;
 }
 
-// ***************************************************************************//
-// ***                  Some moodle internal functions                     ***//
-// ***************************************************************************//
+// ***************************************************************************//.
+// ***                  Some moodle internal functions                     ***//.
+// ***************************************************************************//.
 
 /*
 function __dlg_init(bottom) {
@@ -237,9 +237,9 @@ function __dlg_close_on_esc(ev) {
 */
 
 
-// Initialize
+// Initialize.
 function Init() {
-    // __dlg_init();
+    // __dlg_init(); .
 };
 
 function _CloseOnEsc() {
@@ -250,8 +250,8 @@ function Init() {
     // __dlg_init();
     getAnswerElement(1).focus();
     getAnswerElement(1).select();
-    // document.getElementById('1_option').focus();
-    // document.getElementById("1_option").select();
+    // document.getElementById('1_option').focus(); .
+    // document.getElementById("1_option").select(); .
     document.body.onkeypress = _CloseOnEsc;
     var param = window.dialogArguments;
 };
@@ -263,7 +263,7 @@ function onOK() {
     for (var i in required) {
         var el = document.getElementById(i);
         if (!el.value) {
-            // alert(required[i]);
+            // alert(required[i]); .
             el.focus();
             return false;
         }
