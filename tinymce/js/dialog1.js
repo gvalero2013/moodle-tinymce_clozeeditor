@@ -53,7 +53,7 @@ function isCode(str) {
         if (((str.charAt(0) == '{') || (str.charAt(1) == '{')) &&
         ((str.charAt(str.length - 2) == '}') || (str.charAt(str.length - 1) == '}'))) {
             // User selected code.
-            // This fork looks at the first, second, first before last and last sign. 
+            // This fork looks at the first, second, first before last and last sign.
             // If one of the first two is a { and one of the last two is a }, it will be recognized as code.
             return true;
         } else {
