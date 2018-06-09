@@ -22,7 +22,7 @@
             init : function(ed, url) {
                         // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor'); .
                         // 2018 June 09: G Valero changed width (originally = 490) to 620 to fix problem with french translation .
-                        // The right 'Cancel' button was truncated by the small (490 pixels) window size . 
+                        // The right 'Cancel' button was truncated by the small (490 pixels) window size .
                     strings not fitting .
                         ed.addCommand('mceclozeeditor', function() {
                             lang = ed.getParam('language');
