@@ -20,7 +20,7 @@
  * @package    tiny_mce
  * @subpackage clozeeditor
  * @author  2013 Andreas Glombitza/Achim Skuta
- * @author  2018 Germán Valero/Daniel thies
+ * @author  2018 Germán Valero/Daniel Thies
  * @copyright  2013 Andreas Glombitza/Achim Skuta
  * @copyright  2018 onwards Germán Valero (gvalero@unam.mx)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
