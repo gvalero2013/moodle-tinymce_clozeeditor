@@ -7,6 +7,11 @@
  * License: http://tinymce.moxiecode.com/license
  * Contributing: http://tinymce.moxiecode.com/contributing
  */
+// In 2018 June 09 G Valero changed one line .
+// From: width : 40 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
+// To:   width : 620 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
+// In order to expand the window and prevent the 'Cancel' buttom
+// from being truncated in some browsers in the French language
 
 (function() {
 
