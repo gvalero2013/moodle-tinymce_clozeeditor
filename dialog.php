@@ -57,18 +57,12 @@ header('X-UA-Compatible: IE=edge');
     <legend class="title">{#clozeeditor.titleclozeeditor}</legend>
     <label for="quiz_type">{#clozeeditor.chooseclozeformat}</label><br />
     <select name="quizType" onchange="toggleThrottle(); " >
-            <option value="SHORTANSWER">
-                <?php echo get_string('shortanswer', 'quiz'); ?></option>
-            <option value="SHORTANSWER_C">
-                <?php echo get_string('shortanswer', 'quiz')." (".get_string('casesensitive', 'quiz').")"; ?></option>
-            <option value="MULTICHOICE" >
-                <?php echo get_string('layoutselectinline', 'qtype_multianswer'); ?></option>
-            <option value="MULTICHOICE_V">
-                <?php echo get_string('layoutvertical', 'qtype_multianswer'); ?></option>
-            <option value="MULTICHOICE_H">
-                <?php echo get_string('layouthorizontal', 'qtype_multianswer'); ?></option>
-            <option value="NUMERICAL">
-                <?php echo get_string('numerical', 'quiz'); ?></option>
+            <option value="SHORTANSWER"><?php echo get_string('shortanswer', 'quiz'); ?></option>
+            <option value="SHORTANSWER_C"><?php echo get_string('shortanswer', 'quiz')." (".get_string('casesensitive', 'quiz').")"; ?></option>
+            <option value="MULTICHOICE" ><?php echo get_string('layoutselectinline', 'qtype_multianswer'); ?></option>
+            <option value="MULTICHOICE_V"><?php echo get_string('layoutvertical', 'qtype_multianswer'); ?></option>
+            <option value="MULTICHOICE_H"><?php echo get_string('layouthorizontal', 'qtype_multianswer'); ?></option>
+            <option value="NUMERICAL"><?php echo get_string('numerical', 'quiz'); ?></option>
   </select>
   <br />
 <label for="weighting"><?php echo get_string('defaultgrade', 'quiz'); ?></label>
