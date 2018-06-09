@@ -74,11 +74,10 @@ header('X-UA-Compatible: IE=edge');
 </form>
 
 <form onsubmit="clozeeditorDialog.insert();return false;" action="#">
-
-	<div class="mceActionPanel">
-		<input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
-		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-	</div>
+        <div class="mceActionPanel">
+                <input type="button" id="insert" name="insert" value="{#insert}" onclick="clozeeditorDialog.insert();" />
+                <input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
 </form>
 
 </body>
