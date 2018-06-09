@@ -25,7 +25,7 @@
                             lang = ed.getParam('language');
                                 ed.windowManager.open({
                                     file : ed.getParam("moodle_plugin_base") + 'clozeeditor/dialog.php?lang=' + lang ,
-                                    width : 490 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
+                                    width : 620 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
                                     height : 360 + parseInt(ed.getLang('clozeeditor.delta_height', 0)),
                                     inline : true
                                 }, {
