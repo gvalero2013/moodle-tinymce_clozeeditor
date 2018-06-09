@@ -19,14 +19,17 @@
  *
  * @package    tiny_mce
  * @subpackage clozeeditor
+ * @author  2013 Andreas Glombitza/Achim Skuta
+ * @author  2018 Germán Valero/Daniel thies
  * @copyright  2013 Andreas Glombitza/Achim Skuta
+ * @copyright  2018 onwards Germán Valero (gvalero@unam.mx)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 
-$plugin->version = 20180607; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version = 20180609; // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires = 2017111300; // 2017111300 is Moodle 3.4.0.
 $plugin->component = 'tinymce_clozeeditor';
 $plugin->maturity = MATURITY_STABLE;
