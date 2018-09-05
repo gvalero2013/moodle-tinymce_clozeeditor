@@ -10,29 +10,38 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-// You should have received a copy of the GNU General Public License
-// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-// *
-// Privacy Subsystem for tinymce_clozeeditor implementing null_provider.
-//
-// @package    tinymce_clozeeditor
-// @copyright  2018 German Valero <gvalero@unam.mx>
-// @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
-// .
+
+
+/**
+ * Privacy Subsystem for tinymce_clozeeditor implementing null_provider.
+ *
+ * @package    tinymce_clozeeditor
+ * @copyright  2018 German Valero <gvalero@unam.mx>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 namespace tinymce_clozeeditor\privacy;
+
 defined('MOODLE_INTERNAL') || die();
 
-class provider implements
+/**
+ * Privacy Subsystem for atto_cloze implementing null_provider.
+ *
+ * @copyright   2018 Germán Valero <gvalero@unam.mx>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
 
+class provider implements
     \core_privacy\local\metadata\null_provider {
+
     use \core_privacy\local\legacy_polyfill;
-    //
-    // Get the language string identifier with the component's language
-    // file to explain why this plugin stores no data.
-    //
-    // @return  string
-    //
+
+    /**
+     * Get the language string identifier with the component's language
+     * file to explain why this plugin stores no data.
+     *
+     * @return  string
+     */
     public static function _get_reason() : string {
         return 'privacy:metadata';
     }
