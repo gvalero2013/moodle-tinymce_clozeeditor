@@ -1,4 +1,4 @@
-// htmlArea v3.0 - Copyright (c) 2002, 2003 interactivetools.com, inc.
+// HtmlArea v3.0 - Copyright (c) 2002, 2003 interactivetools.com, inc.
 // This copyright notice MUST stay intact for use (see license.txt).
 //
 // Portions (c) dynarch.com, 2003
@@ -72,7 +72,7 @@ function __dlg_translate(i18n) {
     }
 };
 
-// closes the dialog and passes the return info upper.
+// Closes the dialog and passes the return info upper.
 function __dlg_close(val) {
         opener.Dialog._return(val);
     window.close();
