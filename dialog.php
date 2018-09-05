@@ -13,29 +13,25 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 // $Id: insert_cloze.php,v 1.4 2013/18/03
+
 
 /**
  * Dialog for cloze editor for tinymce editor.
  *
- * @package    tinymce_clozeeditor
+ * @package    tinymce_colzeeditor
  * @copyright  2013 Andreas Glombitza/Achim Skuta
  * @copyright  2018 onward Germán Valero <gvalero@unam.mx>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 define('NO_MOODLE_COOKIES', true); // Session not used here.
-
 require(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__)))))) . '/config.php');
-
 $PAGE->set_context(context_system::instance());
 $PAGE->set_url('/lib/editor/tinymce/plugins/clozeeditor/dialog.php');
 $stringmanager = get_string_manager();
-
 $editor = get_texteditor('tinymce');
 $plugin = $editor->get_plugin('clozeeditor');
-
 $htmllang = get_html_lang();
 header('Content-Type: text/html; charset=utf-8');
 header('X-UA-Compatible: IE=edge');
