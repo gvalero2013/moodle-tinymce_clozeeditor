@@ -15,19 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- *
- *
+ * Strings for component 'atto_cloze', language 'en'.
+
  * @package    tiny_mce
  * @subpackage clozeeditor
  * @copyright  2013 Andreas Glombitza/Achim Skuta
- * @copyright  2018 onwards Germán Valero (gvalero@unam.mx)
+ * @copyright  2018 onwards Germán Valero <gvalero@unam.mx>
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-
 $string['pluginname'] = 'Cloze Editor';
 $string['privacy:metadata'] = 'The TinyMCE Cloze editor plugin does not store any personal data.';
-
 $string['clozeeditor:desc'] = 'This is an editor for CLOZE questions';
 $string['clozeeditor:chooseclozeformat'] = 'Please choose a Cloze sub-question format:';
 $string['clozeeditor:encode'] = 'Encode';
