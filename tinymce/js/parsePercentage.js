@@ -2,12 +2,12 @@
 
 // Parse Percentage
 
-// delete all the stuff between two percentage values
+// Delete all the stuff between two percentage values
 function deleteInbetweenPercentages(string) {
     return deleteTillChar(string, '~');
 }
 
-// print percentage
+// Print percentage
 function percentOutput(string) {
     var temp = string;
 
@@ -30,7 +30,7 @@ function percentOutput(string) {
     }
 }
 
-// this function will retrieve a percentage value
+// This function will retrieve a percentage value
 function getPercentage(string, count) {
     var temp = string;
 
