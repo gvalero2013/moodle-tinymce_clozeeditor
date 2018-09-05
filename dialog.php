@@ -19,7 +19,7 @@
 /**
  * Dialog for cloze editor for tinymce editor.
  *
- * @package    tinymce_colzeeditor
+ * @package    tinymce_clozeeditor
  * @copyright  2013 Andreas Glombitza/Achim Skuta
  * @copyright  2018 onward Germán Valero <gvalero@unam.mx>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
