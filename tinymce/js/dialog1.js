@@ -155,11 +155,9 @@ function __dlg_init(bottom) {
     body_height = pos.y + bottom.offsetHeight;
   }
   window.dialogArguments = opener.Dialog._arguments;
-
   document.body.onkeypress = __dlg_close_on_esc;
   window.focus();
 };
-
 function getAbsolutePos(el) {
   var r = { x: el.offsetLeft, y: el.offsetTop };
   if (el.offsetParent) {
@@ -169,7 +167,6 @@ function getAbsolutePos(el) {
   }
   return r;
 };
-
 function comboSelectValue(c, val) {
   var ops = c.getElementsByTagName("option");
   for (var i = ops.length; --i >= 0;) {
@@ -178,11 +175,9 @@ function comboSelectValue(c, val) {
   }
   c.value = val;
 };
-
 function __dlg_onclose() {
   opener.Dialog._return(null);
 };
-
 function __dlg_init(bottom) {
   var body = document.body;
   var body_height = 0;
@@ -196,11 +191,9 @@ function __dlg_init(bottom) {
     body_height = pos.y + bottom.offsetHeight;
   }
   window.dialogArguments = opener.Dialog._arguments;
-
   document.body.onkeypress = __dlg_close_on_esc;
   window.focus();
 };
-
 function __dlg_translate(i18n) {
   var types = ["span", "option", "td", "button", "div"];
   for (var type in types) {
@@ -218,13 +211,11 @@ function __dlg_translate(i18n) {
   if (txt)
     document.title = txt;
 };
-
 // closes the dialog and passes the return info upper.
 function __dlg_close(val) {
   opener.Dialog._return(val);
   window.close();
 };
-
 function __dlg_close_on_esc(ev) {
   ev || (ev = window.event);
   if (ev.keyCode == 27) {
@@ -233,7 +224,6 @@ function __dlg_close_on_esc(ev) {
   }
   return true;
 };
-
 */
 
 
