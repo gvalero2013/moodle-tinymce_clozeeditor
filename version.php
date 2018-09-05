@@ -13,7 +13,6 @@
 //
 // You should have received a copy of the GNU General Public License
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
-
 /**
  * Plugin for Moodle tinymce clozeeditor.
  *
@@ -25,12 +24,9 @@
  * @copyright  2018 onwards Germán Valero (gvalero@unam.mx)
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-
 defined('MOODLE_INTERNAL') || die();
-
-
-$plugin->version = 20180609; // The current plugin version (Date: YYYYMMDDXX).
+$plugin->version = 2018060916; // The current plugin version (Date: YYYYMMDDXX).
 $plugin->requires = 2017111300; // 2017111300 is Moodle 3.4.0.
 $plugin->component = 'tinymce_clozeeditor';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '1.0'; // Maybe this should be 1.1.
+$plugin->release = 'v3.5-r1'; // Maybe this should be 1.1.
