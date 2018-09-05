@@ -21,12 +21,12 @@ function deleteLastChar(string) {
 
 // Include '\' in front of all ". This might be vacuous in JavaScript, but was important in PHP
 function stripslashes(str) {
-    // is this still needed in JavaScript?
+    // Is this still needed in JavaScript?
     return str;
 }
 
 function toggleThrottle() {
-    // derived version auf "getElementsByClassName"
+    // Derived version auf "getElementsByClassName"
 
     var allHTMLTags = new Array();
     // Create Array of All HTML Tags
