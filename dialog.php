@@ -16,6 +16,15 @@
 
 // $Id: insert_cloze.php,v 1.4 2013/18/03
 
+/**
+ * Dialog for cloze editor for tinymce editor.
+ *
+ * @package    tinymce_clozeeditor
+ * @copyright  2013 Andreas Glombitza/Achim Skuta
+ * @copyright  2018 onward Germán Valero <gvalero@unam.mx>
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ */
+
 define('NO_MOODLE_COOKIES', true); // Session not used here.
 
 require(dirname(dirname(dirname(dirname(dirname(dirname(__FILE__)))))) . '/config.php');
