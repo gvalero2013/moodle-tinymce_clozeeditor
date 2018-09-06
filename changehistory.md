@@ -1,21 +1,21 @@
 # CHANGE HISTORY
 
 ### 05 September 2018. v3.5r4
-minor changes in:
-encode.js - Comments should start with Uppercase
-parse.js - space in line before var noStrings = "";
-parseAnswer.js - Comments should start with Uppercase
-parseFeedback.js - Comments should start with Uppercase
-parseHelper.js - Comments should start with Uppercase
-parsePercentaje.js - Comments should start with Uppercase
-popup.js - Comments should start with Uppercase
-changehistory.md - THIS FILE
-dialog.php  * @package    tinymce_colzeeditor  made * @package    tinymce_clozeeditor
-version.php - Version and release changed
+* minor changes in:
+* encode.js - Comments should start with Uppercase
+* parse.js - space in line before var noStrings = "";
+* parseAnswer.js - Comments should start with Uppercase
+* parseFeedback.js - Comments should start with Uppercase
+* parseHelper.js - Comments should start with Uppercase
+* parsePercentaje.js - Comments should start with Uppercase
+* popup.js - Comments should start with Uppercase
+* changehistory.md - THIS FILE
+* dialog.php  * @package    tinymce_colzeeditor  made * @package    tinymce_clozeeditor
+* version.php - Version and release changed
 
-possible important changes in 
-tinymce/plugin.js - spaces between key and : character
-editor.css many spaces in many places and some : characters at end of line
+* possible important changes in 
+* tinymce/plugin.js - spaces between key and : character
+* editor.css many spaces in many places and some : characters at end of line
 
 
 ### 09 June 2018. 1.0
