@@ -1,4 +1,10 @@
 # CHANGE HISTORY
+## 05 September 2018. v3.5r5
+
+### possible important changes in 
+* tinymce/editor_plugin.js - restored file from moodle.com
+* dialog.css - restored file from moodle.com
+* version.php - Version and release changed
 
 ## 05 September 2018. v3.5r4
 ### minor changes in:
