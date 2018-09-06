@@ -14,8 +14,8 @@
 * version.php - Version and release changed
 
 ### possible important changes in 
-* tinymce/plugin.js - spaces between key and : character
-* editor.css many spaces in many places and some : characters at end of line
+* tinymce/editor_plugin.js - spaces between key and : character
+* dialog.css many spaces in many places and some : characters at end of line
 
 
 ## 09 June 2018. 1.0
