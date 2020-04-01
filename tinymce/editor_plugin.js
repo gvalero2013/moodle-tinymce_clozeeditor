@@ -11,7 +11,7 @@
 // From: width : 40 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
 // To:   width : 620 + parseInt(ed.getLang('clozeeditor.delta_width', 0)),
 // In order to expand the window and prevent the 'Cancel' buttom
-// from being truncated in some browsers in the French language
+// from being truncated in some browsers in the French language.
 
 (function() {
 
@@ -25,7 +25,8 @@
                  * @param {string} url Absolute URL to where the plugin is located.
                  */
             init : function(ed, url) {
-                        // Register the command so that it can be invoked by using tinyMCE.activeEditor.execCommand('mceclozeeditor'); .
+                        // Register the command so that it can be invoked by 
+                        // Using tinyMCE.activeEditor.execCommand('mceclozeeditor'); .
                         ed.addCommand('mceclozeeditor', function() {
                             lang = ed.getParam('language');
                                 ed.windowManager.open({
